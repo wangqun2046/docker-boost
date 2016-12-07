@@ -11,7 +11,6 @@ RUN \
   && ./b2 -a -sHAVE_ICU=1 \
   && ./b2 install \
   && cd .. \
-  && apk del .build-deps curl \
   && rm -rf boost_1_62_0.tar.bz2 boost_1_62_0
 
 CMD ['/bin/sh']
