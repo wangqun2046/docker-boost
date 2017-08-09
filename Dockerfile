@@ -12,5 +12,3 @@ RUN \
   && ./b2 install \
   && cd .. \
   && rm -rf boost_1_62_0.tar.bz2 boost_1_62_0
-
-CMD ['/bin/sh']
