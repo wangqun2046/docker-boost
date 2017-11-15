@@ -1,5 +1,7 @@
 FROM alpine:latest
 
+MAINTAINER Wang Qun, <qun.wang@live.cn>
+
 RUN \
   apk add --no-cache --virtual .build-deps g++ make curl linux-headers python-dev \
   && curl -SL "http://downloads.sourceforge.net/project/boost/boost/1.62.0/boost_1_62_0.tar.bz2?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fboost%2Ffiles%2Fboost%2F1.62.0%2F&ts=$(date +%s)&use_mirror=superb-sea2" \
